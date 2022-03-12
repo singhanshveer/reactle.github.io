@@ -58,8 +58,8 @@ function App() {
     localStorage.getItem('theme')
       ? localStorage.getItem('theme') === 'dark'
       : prefersDarkMode
-      ? true
-      : false
+        ? true
+        : false
   )
   const [isHighContrastMode, setIsHighContrastMode] = useState(
     getStoredIsHighContrastMode()
@@ -289,7 +289,7 @@ function App() {
           handleDarkMode={handleDarkMode}
           isHighContrastMode={isHighContrastMode}
           handleHighContrastMode={handleHighContrastMode}
-        />
+        />  
         <AlertContainer />
       </div>
     </div>
